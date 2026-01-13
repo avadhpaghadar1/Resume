@@ -88,17 +88,32 @@
 }
 
 .experience-card {
-  min-width: 350px;
-  /* height: 170px; */
+  width: 620px;
+  max-width: 620px;
+  flex: 0 0 620px;
   margin-bottom: 20px;
-  border-radius:10px;
+  border-radius: var(--radius-lg);
   display: flex;
-  flex-direction:column;
-  padding: 10px;
-  margin-left: 10px;
-  -webkit-box-shadow: 4px 3px 20px -2px grey;
-  -moz-box-shadow: 4px 3px 20px -2px grey;
-  box-shadow: 4px 3px 20px -2px grey;
+  flex-direction: column;
+  padding: 16px 18px;
+  margin-left: 12px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+
+.experience-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  pointer-events: none;
 }
 
 .arrow-left {
@@ -119,11 +134,11 @@
 
 .experience-card-stepper {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   position: relative;
-  align-items: center; 
-  flex-direction: column; 
-  margin-top: -40px
+  align-items: center;
+  flex-direction: column;
+  margin-top: -40px;
 }
 
 .experience-card-body-div {
@@ -138,10 +153,21 @@
 .experience-card-logo {
   width: 100px;
   height: 100px;
-  -webkit-box-shadow: 4px 3px 20px -2px grey;
-  -moz-box-shadow: 4px 3px 20px -2px grey;
-  box-shadow: 4px 3px 20px -2px grey;
-  border-radius: 50px;
+  border-radius: 9999px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+  background: var(--surface-strong);
+}
+
+.experience-card-logo--freelancer {
+  background-color: #ffffff;
+  border-radius: 9999px;
+  object-fit: contain;
+}
+
+.experience-card-logo--crmpunch {
+  background-color: #ffffff;
+  object-fit: contain;
 }
 
 .experience-card-title {
@@ -151,12 +177,15 @@
   margin-left: 0px;
   margin-right: 7px;
   text-align: left;
+  font-size: 20px;
+  letter-spacing: -0.01em;
 }
 
 .experience-card-company {
   font-family: "Google Sans Regular";
   margin: 0;
   text-align: left;
+  opacity: 0.92;
 }
 
 .experience-card-duration {
@@ -196,42 +225,77 @@
   font-family: "Google Sans Regular";
 }
 
+.experience-card-row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.experience-card-description-list {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  text-align: left;
+  font-family: "Google Sans Regular";
+  line-height: 1.55;
+}
+
+.experience-card-description-list li {
+  margin: 6px 0;
+}
 
 .experience-card-company > a {
   position: relative;
-  color: #000;
+  color: inherit;
   text-decoration: none;
 }
 
 .experience-card-company > a:hover {
-  color: #000;
-} 
+  color: inherit;
+}
 
 .experience-card-company > a:hover:before {
-visibility: visible;
--webkit-transform: scaleX(1);
-transform: scaleX(1);
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .experience-card-company > a:before {
-content: "";
-position: absolute;
-width: 100%;
-height: 1px;
-bottom: 0;
-left: 0;
-background-color: #000;
-visibility: hidden;
--webkit-transform: scaleX(0);
-transform: scaleX(0);
--webkit-transition: all 0.3s ease-in-out 0s;
-transition: all 0.3s ease-in-out 0s;
-} 
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent, #000);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
 
 .experience-list-item {
   display: flex;
   align-items: center;
   flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .experience-list-item {
+    align-items: flex-start;
+  }
+
+  .experience-card {
+    min-width: 0;
+    width: calc(100vw - 120px);
+    max-width: 100%;
+    flex: 1 1 auto;
+    padding: 14px 14px;
+  }
+
+  .experience-card-title {
+    font-size: 18px;
+  }
 }
 
 /* .dot:before{
@@ -264,82 +328,82 @@ transition: all 0.3s ease-in-out 0s;
 } */
 
 @keyframes ripple {
-   0% {
-    left:5px;
-    top:5px;
-    opcity:75;
-    width:0;
-    height:0;
+  0% {
+    left: 5px;
+    top: 5px;
+    opcity: 75;
+    width: 0;
+    height: 0;
   }
   100% {
-    left:-20px;
-    top:-20px;
+    left: -20px;
+    top: -20px;
     opacity: 0;
-    width:50px;
-    height:50px;
+    width: 50px;
+    height: 50px;
   }
 }
 
 @media (max-width: 768px) {
-  .experience-card{
-      /* margin-bottom:10px; */
-      flex-direction:column;
-      text-align: center;
+  .experience-card {
+    /* margin-bottom:10px; */
+    flex-direction: column;
+    text-align: center;
   }
 
   .arrow-left {
-      display: none;
+    display: none;
   }
 
   .experience-card-stepper {
-      display: none;
+    display: none;
   }
 
   .experience-list-item {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .experience-card-logo {
-      width: 100px;
+    width: 100px;
   }
 
   .experience-card-heading-left {
-      float: center;
-      margin-left: auto;
-      margin-right: auto;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .experience-card-heading-right {
-      float: center;
-      margin-left: auto;
-      margin-right: auto;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .experience-card-title {
-      /* text-align: center; */
+    /* text-align: center; */
   }
 
   .experience-card-company {
-      /* text-align: center; */
+    /* text-align: center; */
   }
 
   .experience-card-duration {
-      /* margin-top: 2px; */
-      /* text-align: center; */
+    /* margin-top: 2px; */
+    /* text-align: center; */
   }
 
-  .experience-card-location{
-      /* text-align: left; */
-      /* text-align: center; */
+  .experience-card-location {
+    /* text-align: left; */
+    /* text-align: center; */
   }
 
   .experience-card-header-div {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .experience-card-description {
-      margin-left: 14px;
-      margin-right: 14px;
-      text-align: justify;
+    margin-left: 14px;
+    margin-right: 14px;
+    text-align: justify;
   }
 }

@@ -1,10 +1,52 @@
 /* header */
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
   display: block;
-  max-width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
+  max-width: 1100px;
+  padding: 14px 14px;
+  margin: 14px auto;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+}
+
+.header-control-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 40px;
+  border: 1px solid var(--border-subtle);
+  background: var(--surface);
+  color: inherit;
+  padding: 8px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.header-control-btn:hover {
+  background: var(--surface-strong);
+}
+
+.header-control-select {
+  border: 1px solid var(--border-subtle);
+  background: var(--surface);
+  color: inherit;
+  padding: 8px 10px;
+  border-radius: 999px;
 }
 
 .header ul {
@@ -20,9 +62,11 @@
 
 .header li a {
   display: block;
-  padding: 20px 20px;
+  padding: 10px 12px;
   /* color: black; */
   text-decoration: none;
+  border-radius: 12px;
+  transition: background-color 160ms ease, transform 160ms ease;
 }
 
 .header li a:hover,
@@ -35,7 +79,7 @@
   float: left;
   font-size: 1.5em;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 6px;
   line-height: normal;
 }
 .header .logo-name {

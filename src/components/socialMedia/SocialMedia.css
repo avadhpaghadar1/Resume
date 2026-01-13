@@ -1,12 +1,17 @@
 .social-media-div {
   font-size: 2em;
 }
-
-.icon-button i {
-  color: white;
-}
 .icon-button {
   margin-bottom: 10px;
+}
+
+.icon-button--disabled {
+  display: inline-block;
+}
+
+.icon-button--disabled i {
+  cursor: default;
+  opacity: 1;
 }
 
 .icon-button i {

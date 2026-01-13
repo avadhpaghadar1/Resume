@@ -11,7 +11,11 @@ export default class Error extends Component {
     const theme = this.props.theme;
     return (
       <div className="error-main">
-        <Header theme={this.props.theme} />
+        <Header
+          theme={this.props.theme}
+          themeName={this.props.themeName}
+          onToggleTheme={this.props.onToggleTheme}
+        />
         <div className="error-class">
           <Fade bottom duration={2000} distance="40px">
             <h1>Woops</h1>

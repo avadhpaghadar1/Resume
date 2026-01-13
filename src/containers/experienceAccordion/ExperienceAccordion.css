@@ -4,10 +4,63 @@
 
 .accord-panel {
   font-family: "Google Sans Regular";
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-lg, 16px);
+  overflow: hidden;
+  background: color-mix(
+    in srgb,
+    var(--surface, rgba(255, 255, 255, 0.08)) 85%,
+    transparent
+  );
+  box-shadow: var(--shadow-sm, 0 6px 18px rgba(0, 0, 0, 0.18));
+  margin-bottom: 12px;
+}
+
+.accord-header {
+  width: 100%;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.accord-header:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.accord-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.accord-chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.accord-content {
+  padding: 8px 8px 12px;
 }
 
 @media (max-width: 768px) {
   .experience-accord {
     margin: 20px;
+  }
+
+  .accord-header {
+    padding: 12px 12px;
   }
 }

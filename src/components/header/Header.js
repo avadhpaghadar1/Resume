@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Header.css";
 import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
-import { greeting, settings } from "../../portfolio.js";
+import { greeting } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
 
 const onMouseEnter = (event, color) => {
@@ -18,7 +18,7 @@ const onMouseOut = (event) => {
 class Header extends Component {
   render() {
     const theme = this.props.theme;
-    const link = settings.isSplash ? "/splash" : "home";
+    const link = "/home";
     return (
       <Fade top duration={1000} distance="20px">
         <SeoHeader />
@@ -86,18 +86,6 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
-                  to="/opensource"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Open Source
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
                   to="/contact"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
@@ -105,8 +93,31 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Contact Me
+                  Contact
                 </NavLink>
+              </li>
+              <li className="header-controls">
+                <button
+                  type="button"
+                  className="header-control-btn"
+                  onClick={this.props.onToggleTheme}
+                  title={
+                    this.props.themeName === "light"
+                      ? "Switch to dark mode"
+                      : "Switch to light mode"
+                  }
+                  aria-label={
+                    this.props.themeName === "light"
+                      ? "Switch to dark mode"
+                      : "Switch to light mode"
+                  }
+                >
+                  {this.props.themeName === "light" ? (
+                    <i className="fas fa-moon" aria-hidden="true"></i>
+                  ) : (
+                    <i className="fas fa-sun" aria-hidden="true"></i>
+                  )}
+                </button>
               </li>
             </ul>
           </header>

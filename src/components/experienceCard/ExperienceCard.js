@@ -8,6 +8,27 @@ class ExperienceCard extends Component {
     const index = this.props.index;
     const totalCards = this.props.totalCards;
     const theme = this.props.theme;
+
+    const accentColor =
+      experience?.color || theme.imageHighlight || theme.headerColor;
+    const descriptionLines =
+      typeof experience?.description === "string"
+        ? experience.description
+            .split("\n")
+            .map((line) => line.replace(/^\s*[•-]\s*/, "").trim())
+            .filter(Boolean)
+        : [];
+
+    const isFreelancerLogo =
+      typeof experience["logo_path"] === "string" &&
+      experience["logo_path"].toLowerCase().includes("freelancer");
+    const isCrmPunch = experience["company"] === "CRM Punch";
+
+    const logoClassName =
+      "experience-card-logo" +
+      (isFreelancerLogo ? " experience-card-logo--freelancer" : "") +
+      (isCrmPunch ? " experience-card-logo--crmpunch" : "");
+
     return (
       <div
         className="experience-list-item"
@@ -16,18 +37,25 @@ class ExperienceCard extends Component {
         <Fade left duration={2000} distance="40px">
           <div className="experience-card-logo-div">
             <img
-              className="experience-card-logo"
+              className={logoClassName}
               src={require(`../../assets/images/${experience["logo_path"]}`)}
-              alt=""
+              alt={
+                experience?.company
+                  ? `${experience.company} logo`
+                  : "Company logo"
+              }
             />
           </div>
         </Fade>
-        <div className="experience-card-stepper">
+        <div
+          className="experience-card-stepper"
+          style={{ "--accent": accentColor }}
+        >
           <div
             style={{
               width: 20,
               height: 20,
-              backgroundColor: `${theme.headerColor}`,
+              backgroundColor: "var(--accent)",
               borderRadius: 50,
               zIndex: 100,
             }}
@@ -37,7 +65,7 @@ class ExperienceCard extends Component {
               style={{
                 height: 190,
                 width: 2,
-                backgroundColor: `${theme.headerColor}`,
+                backgroundColor: "var(--accent)",
                 position: "absolute",
                 marginTop: 20,
               }}
@@ -45,14 +73,14 @@ class ExperienceCard extends Component {
           )}
         </div>
         <Fade right duration={2000} distance="40px">
-          <div style={{ display: "flex", flexDirection: "row" }}>
+          <div className="experience-card-row">
             <div
               className="arrow-left"
               style={{ borderRight: `10px solid ${theme.body}` }}
             ></div>
             <div
               className="experience-card"
-              style={{ background: `${theme.body}` }}
+              style={{ background: `${theme.body}`, "--accent": accentColor }}
             >
               <div
                 style={{
@@ -72,13 +100,17 @@ class ExperienceCard extends Component {
                     className="experience-card-company"
                     style={{ color: theme.text }}
                   >
-                    <a
-                      href={experience["company_url"]}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {experience["company"]}
-                    </a>
+                    {experience?.company_url ? (
+                      <a
+                        href={experience["company_url"]}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {experience["company"]}
+                      </a>
+                    ) : (
+                      <span>{experience["company"]}</span>
+                    )}
                   </p>
                 </div>
                 <div>
@@ -98,16 +130,17 @@ class ExperienceCard extends Component {
                   </div>
                 </div>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-start",
-                  marginTop: 20,
-                }}
-              >
-                <div className="repo-description" />
-                {experience["description"]}
-              </div>
+              {descriptionLines.length > 0 ? (
+                <ul className="experience-card-description-list">
+                  {descriptionLines.map((line, idx) => (
+                    <li key={idx}>{line}</li>
+                  ))}
+                </ul>
+              ) : (
+                <div className="experience-card-description">
+                  {experience["description"]}
+                </div>
+              )}
             </div>
           </div>
         </Fade>
