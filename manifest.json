@@ -1,0 +1,20 @@
+{
+  "name": "Avadh Paghadar | Portfolio",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icons/favicon1.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ],
+  "short_name": "Avadh",
+  "start_url": ".",
+  "theme_color": "#000000"
+}
