@@ -24,7 +24,7 @@ const greeting = {
   nickname: "",
   subTitle:
     "Aspiring and dedicated Software Engineer with a strong foundation in Laravel, React.js, and MySQL, along with practical experience building scalable web applications and integrating third-party platforms like QuickBase and Stripe.",
-  resumeLink: "/resume.pdf",
+  resumeLink: "./Avadh Paghadar.pdf",
   portfolio_repository: "",
   githubProfile: "https://github.com/avadhpaghadar1/",
   linkedinProfile: "https://www.linkedin.com/in/avadh-paghadar-92a074271/",
