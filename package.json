@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "masterPortfolio",
+  "name": "Resume",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://avadhpaghadar1.github.io/Resume",
   "scripts": {
     "build": "react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run build",
