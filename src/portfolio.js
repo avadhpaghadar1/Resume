@@ -9,7 +9,7 @@ const settings = {
 const seo = {
   title: "Avadh Paghadar | Portfolio",
   description:
-    "Full Stack Developer with experience building scalable web applications using Laravel, React.js, Node.js, and MySQL, including integrations like QuickBase and Stripe.",
+    "Software Engineer and Full Stack Developer with experience building scalable web applications using Laravel, React.js, Node.js, PHP, and MySQL. Contributed to CRM platforms supporting 10,000+ active users, optimized backend performance, and developed secure REST APIs and automation workflows. Proven expertise in delivering highperformance SaaS, e-commerce, and enterprise solutions.",
   og: {
     title: "Avadh Paghadar | Portfolio",
     type: "website",
@@ -20,11 +20,11 @@ const seo = {
 //Home Page
 const greeting = {
   title: "Avadh Paghadar",
-  logo_name: "AvadhPaghadar",
+  logo_name: "Avadh Paghadar",
   nickname: "",
   subTitle:
-    "Aspiring and dedicated Software Engineer with a strong foundation in Laravel, React.js, and MySQL, along with practical experience building scalable web applications and integrating third-party platforms like QuickBase and Stripe.",
-  resumeLink: "./Avadh Paghadar.pdf",
+    "Software Engineer and Full Stack Developer with experience building scalable web applications using Laravel, React.js, Node.js, PHP, and MySQL. Contributed to CRM platforms supporting 10,000+ active users, optimized backend performance, and developed secure REST APIs and automation workflows. Proven expertise in delivering highperformance SaaS, e-commerce, and enterprise solutions.",
+  resumeLink: "./Avadh_Paghadar_Software_Engineer_Resume.pdf",
   portfolio_repository: "",
   githubProfile: "https://github.com/avadhpaghadar1/",
   linkedinProfile: "https://www.linkedin.com/in/avadh-paghadar-92a074271/",
@@ -113,7 +113,30 @@ const degrees = {
 };
 
 const certifications = {
-  certifications: [],
+  certifications: [
+    {
+      title: "Hackerrank",
+      subtitle: "Software Engineer",
+      logo_path: "hackerrank.png",
+      alt_name: "Hackerrank",
+      descriptions: [
+        "⚡ Completed Hackerrank certification for Software Engineer.",
+      ],
+      website_link: "https://www.hackerrank.com/certificates/4441773a814c",
+      certificate_link: "https://www.hackerrank.com/certificates/4441773a814c",
+    },
+    {
+      title: "Hackerrank",
+      subtitle: "Frontend Developer (React)",
+      logo_path: "hackerrank.png",
+      alt_name: "Hackerrank",
+      descriptions: [
+        "⚡ Completed Hackerrank certification for Frontend Developer (React).",
+      ],
+      website_link: "https://www.hackerrank.com/certificates/c78db2d63564",
+      certificate_link: "https://www.hackerrank.com/certificates/c78db2d63564",
+    },
+  ],
 };
 
 // Experience Page
@@ -269,7 +292,7 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "Profile.jpeg",
+    profile_image_path: "Profile.png",
     description:
       "Feel free to reach out for Software Engineer opportunities, freelance work, or collaboration.",
   },
