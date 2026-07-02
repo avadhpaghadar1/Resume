@@ -94,16 +94,16 @@ const degrees = {
     {
       title: "Atmiya University, Rajkot",
       subtitle: "M.Sc. (Information Technology)",
-      logo_path: "",
+      logo_path: "atmiya.png",
       alt_name: "Atmiya University",
-      duration: "Jul 2024 - Present",
+      duration: "Jul 2024 - Mar 2026",
       descriptions: ["⚡ Pursuing M.Sc. in Information Technology."],
       website_link: "",
     },
     {
       title: "Darshan University, Rajkot",
       subtitle: "B.Sc. (Information Technology)",
-      logo_path: "",
+      logo_path: "darshan.png",
       alt_name: "Darshan University",
       duration: "Jul 2021 - Mar 2024",
       descriptions: ["⚡ Completed B.Sc. in Information Technology."],
@@ -316,7 +316,7 @@ const contactPageData = {
   },
   phoneSection: {
     title: "Phone",
-    subtitle: "+91 8460217965",
+    subtitle: "+91 84602 17965",
   },
 };
 
