@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9d364de2809f2c058ba1e45f509523ee",
+    "revision": "27545c490ffc7f0a4eeb48d143d02167",
     "url": "/Resume/index.html"
   },
   {
-    "revision": "5e0efc62a2bae6c6f232",
+    "revision": "ef6ba8b17f8a2b69a9cd",
     "url": "/Resume/static/css/main.026c58c6.chunk.css"
   },
   {
-    "revision": "dac9c3588b2337ec3710",
-    "url": "/Resume/static/js/2.694a75c1.chunk.js"
+    "revision": "d09a14a10bdd204810a4",
+    "url": "/Resume/static/js/2.d2382879.chunk.js"
   },
   {
-    "revision": "5e0efc62a2bae6c6f232",
-    "url": "/Resume/static/js/main.ba5338f0.chunk.js"
+    "revision": "ef6ba8b17f8a2b69a9cd",
+    "url": "/Resume/static/js/main.55d056b6.chunk.js"
   },
   {
     "revision": "a4ab58eecfac33c3a50a",
@@ -52,6 +52,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Resume/static/media/Montserrat-Regular.ee653992.ttf"
   },
   {
+    "revision": "80636a81e954ba5121b93205833e07e3",
+    "url": "/Resume/static/media/Profile.80636a81.png"
+  },
+  {
     "revision": "ab17fc0d50ae9967d195a1cb96310461",
     "url": "/Resume/static/media/Profile.ab17fc0d.jpeg"
   },
@@ -70,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "dcd6dee2bd7458a4a576dc131506fd83",
     "url": "/Resume/static/media/animated_logo.dcd6dee2.svg"
+  },
+  {
+    "revision": "b690491b3d8e45fa8ea9e6c5b6ce13db",
+    "url": "/Resume/static/media/atmiya.b690491b.png"
   },
   {
     "revision": "058eca4cbdc03a1dad9a6bb943ac7831",
@@ -94,6 +102,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "beab0880a4eed3067b642647f3468732",
     "url": "/Resume/static/media/crmpunch.beab0880.png"
+  },
+  {
+    "revision": "aa99366145cf7255f1f40a5b72c04507",
+    "url": "/Resume/static/media/darshan old.aa993661.png"
+  },
+  {
+    "revision": "26488df26a23317e1f0cf0a2ae1e2958",
+    "url": "/Resume/static/media/darshan.26488df2.png"
+  },
+  {
+    "revision": "324ed4bad7b3da99832e4361d89abd18",
+    "url": "/Resume/static/media/darshan.324ed4ba.jpg"
   },
   {
     "revision": "13edb5c1dfefc38a6e5ed510c63cba73",
@@ -206,6 +226,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a6addc3fb6605480614b992ede8cd434",
     "url": "/Resume/static/media/googleAssistant.a6addc3f.svg"
+  },
+  {
+    "revision": "57c80121938277f737f67398a743245e",
+    "url": "/Resume/static/media/hackerrank.57c80121.png"
   },
   {
     "revision": "d3fccbe1db76b96f4f320d9c0f7da30c",
