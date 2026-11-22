@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Resume/static/css/main.026c58c6.chunk.css",
-    "main.js": "/Resume/static/js/main.55d056b6.chunk.js",
-    "main.js.map": "/Resume/static/js/main.55d056b6.chunk.js.map",
+    "main.css": "/Resume/static/css/main.8ba32008.chunk.css",
+    "main.js": "/Resume/static/js/main.f85234f7.chunk.js",
+    "main.js.map": "/Resume/static/js/main.f85234f7.chunk.js.map",
     "runtime-main.js": "/Resume/static/js/runtime-main.d0c822d3.js",
     "runtime-main.js.map": "/Resume/static/js/runtime-main.d0c822d3.js.map",
-    "static/js/2.d2382879.chunk.js": "/Resume/static/js/2.d2382879.chunk.js",
-    "static/js/2.d2382879.chunk.js.map": "/Resume/static/js/2.d2382879.chunk.js.map",
+    "static/js/2.f9e969e5.chunk.js": "/Resume/static/js/2.f9e969e5.chunk.js",
+    "static/js/2.f9e969e5.chunk.js.map": "/Resume/static/js/2.f9e969e5.chunk.js.map",
     "index.html": "/Resume/index.html",
-    "precache-manifest.d79fe5b8faed03ac1954062c8a69d038.js": "/Resume/precache-manifest.d79fe5b8faed03ac1954062c8a69d038.js",
+    "precache-manifest.5b11253cda3188c8bd130ea4471f8a58.js": "/Resume/precache-manifest.5b11253cda3188c8bd130ea4471f8a58.js",
     "service-worker.js": "/Resume/service-worker.js",
-    "static/css/main.026c58c6.chunk.css.map": "/Resume/static/css/main.026c58c6.chunk.css.map",
+    "static/css/main.8ba32008.chunk.css.map": "/Resume/static/css/main.8ba32008.chunk.css.map",
     "static/media/index.css": "/Resume/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/Profile.png": "/Resume/static/media/Profile.80636a81.png",
     "static/media/Profile.jpeg": "/Resume/static/media/Profile.ab17fc0d.jpeg",
@@ -56,6 +56,7 @@
     "static/media/programmer.svg": "/Resume/static/media/programmer.a34154e9.svg",
     "static/media/projects_image.svg": "/Resume/static/media/projects_image.deabd832.svg",
     "static/media/pwa.png": "/Resume/static/media/pwa.71408db7.png",
+    "static/media/snorkel.svg": "/Resume/static/media/snorkel.7a39f27b.svg",
     "static/media/stanford_logo.png": "/Resume/static/media/stanford_logo.2c497738.png",
     "static/media/talksCardBack.svg": "/Resume/static/media/talksCardBack.6ac91b16.svg",
     "static/media/talksCardBackAlt.svg": "/Resume/static/media/talksCardBackAlt.3fa54242.svg",
@@ -65,8 +66,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d0c822d3.js",
-    "static/js/2.d2382879.chunk.js",
-    "static/css/main.026c58c6.chunk.css",
-    "static/js/main.55d056b6.chunk.js"
+    "static/js/2.f9e969e5.chunk.js",
+    "static/css/main.8ba32008.chunk.css",
+    "static/js/main.f85234f7.chunk.js"
   ]
 }
