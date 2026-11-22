@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch, HashRouter } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "../pages/home/HomeComponent";
 import Education from "../pages/education/EducationComponent";
 import Experience from "../pages/experience/Experience";
@@ -15,8 +15,14 @@ export default class Main extends Component {
       onToggleTheme: this.props.onToggleTheme,
     };
 
+    const pathname = window.location.pathname;
+    const basename =
+      pathname === "/Resume" || pathname.startsWith("/Resume/")
+        ? "/Resume"
+        : "";
+
     return (
-      <HashRouter>
+      <BrowserRouter basename={basename}>
         <Switch>
           <Route
             path="/"
@@ -25,6 +31,7 @@ export default class Main extends Component {
           />
           <Route
             path="/home"
+            exact
             render={(props) => <Home {...props} {...commonProps} />}
           />
           <Route
@@ -34,15 +41,18 @@ export default class Main extends Component {
           />
           <Route
             path="/education"
+            exact
             render={(props) => <Education {...props} {...commonProps} />}
           />
           <Route
             path="/contact"
+            exact
             render={(props) => <Contact {...props} {...commonProps} />}
           />
 
           <Route
             path="/projects"
+            exact
             render={(props) => <Projects {...props} {...commonProps} />}
           />
           <Route
@@ -50,7 +60,7 @@ export default class Main extends Component {
             render={(props) => <Error404 {...props} {...commonProps} />}
           />
         </Switch>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }

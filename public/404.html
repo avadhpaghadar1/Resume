@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting...</title>
+    <script>
+      (function () {
+        var l = window.location;
+        var basePath = "/Resume/";
+        var route = l.pathname
+          .replace(basePath, "")
+          .replace(/^\/+|\/+$/g, "");
+
+        l.replace(
+          l.protocol + "//" + l.host + basePath + "?/" + route + l.search + l.hash
+        );
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

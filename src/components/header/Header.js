@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Header.css";
 import { Fade } from "react-reveal";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { greeting } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
 
@@ -15,6 +15,11 @@ const onMouseOut = (event) => {
   el.style.backgroundColor = "transparent";
 };
 
+const closeMobileMenu = () => {
+  const menuButton = document.getElementById("menu-btn");
+  if (menuButton) menuButton.checked = false;
+};
+
 class Header extends Component {
   render() {
     const theme = this.props.theme;
@@ -24,7 +29,7 @@ class Header extends Component {
         <SeoHeader />
         <div>
           <header className="header">
-            <NavLink to={link} tag={Link} className="logo">
+            <NavLink to={link} className="logo">
               <span style={{ color: theme.text }}> &lt;</span>
               <span className="logo-name" style={{ color: theme.text }}>
                 {greeting.logo_name}
@@ -39,11 +44,12 @@ class Header extends Component {
               <li>
                 <NavLink
                   to="/home"
-                  tag={Link}
+                  exact
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
+                  onClick={closeMobileMenu}
                 >
                   Home
                 </NavLink>
@@ -51,11 +57,11 @@ class Header extends Component {
               <li>
                 <NavLink
                   to="/education"
-                  tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
+                  onClick={closeMobileMenu}
                 >
                   Education
                 </NavLink>
@@ -63,11 +69,11 @@ class Header extends Component {
               <li>
                 <NavLink
                   to="/experience"
-                  tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
+                  onClick={closeMobileMenu}
                 >
                   Experience
                 </NavLink>
@@ -75,11 +81,11 @@ class Header extends Component {
               <li>
                 <NavLink
                   to="/projects"
-                  tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
+                  onClick={closeMobileMenu}
                 >
                   Projects
                 </NavLink>
@@ -87,11 +93,11 @@ class Header extends Component {
               <li>
                 <NavLink
                   to="/contact"
-                  tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
+                  onClick={closeMobileMenu}
                 >
                   Contact
                 </NavLink>

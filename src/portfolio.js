@@ -7,9 +7,9 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title: "Avadh Paghadar | Portfolio",
+  title: "Avadh Paghadar | Software Engineer & AI Evaluator",
   description:
-    "Software Engineer and Full Stack Developer with experience building scalable web applications using Laravel, React.js, Node.js, PHP, and MySQL. Contributed to CRM platforms supporting 10,000+ active users, optimized backend performance, and developed secure REST APIs and automation workflows. Proven expertise in delivering highperformance SaaS, e-commerce, and enterprise solutions.",
+    "Software Engineer with 2+ years of experience in Laravel, React.js, Node.js, PHP, Python, REST APIs, SaaS platforms, Docker, and automated testing. Experienced in AI coding evaluation and agent benchmarking, including coding-agent task design, rubric-based assessment, Harbor workflows, and reference solution validation.",
   og: {
     title: "Avadh Paghadar | Portfolio",
     type: "website",
@@ -23,8 +23,8 @@ const greeting = {
   logo_name: "Avadh Paghadar",
   nickname: "",
   subTitle:
-    "Software Engineer and Full Stack Developer with experience building scalable web applications using Laravel, React.js, Node.js, PHP, and MySQL. Contributed to CRM platforms supporting 10,000+ active users, optimized backend performance, and developed secure REST APIs and automation workflows. Proven expertise in delivering highperformance SaaS, e-commerce, and enterprise solutions.",
-  resumeLink: "./Avadh_Paghadar_Software_Engineer_Resume.pdf",
+    "Software Engineer with 2+ years of professional experience in backend development, REST APIs, SaaS platforms, and automation. Skilled in Python, PHP, JavaScript, Laravel, MySQL, Docker, Git, automated testing, and AI coding-agent evaluation. Experienced with benchmark design, rubric-based assessment, Harbor workflows, and reference solution validation.",
+  resumeLink: "./Avadh_Paghadar_AI_Engineering.pdf",
   portfolio_repository: "",
   githubProfile: "https://github.com/avadhpaghadar1/",
   linkedinProfile: "https://www.linkedin.com/in/avadh-paghadar-92a074271/",
@@ -55,28 +55,22 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Software Engineering",
+      title: "Software Engineering & AI Evaluation",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building scalable web applications using Laravel, React.js, Node.js, and MySQL",
-        "⚡ Integrating third-party services like QuickBase CRM, Stripe, and email providers",
-        "⚡ Delivering secure, user-friendly solutions end-to-end (planning → deployment)",
+        "⚡ Developing Laravel, React.js, Node.js, Python, PHP, REST API, and SaaS solutions",
+        "⚡ Designing coding-agent benchmark tasks with explicit instructions, reference solutions, and acceptance tests",
+        "⚡ Evaluating agent actions, tool use, reasoning quality, edge cases, and automated test coverage",
       ],
       softwareSkills: [
-        { skillName: "HTML5", fontAwesomeClassname: "logos-html-5" },
-        { skillName: "CSS3", fontAwesomeClassname: "logos-css-3" },
-        { skillName: "JavaScript", fontAwesomeClassname: "logos-javascript" },
+        { skillName: "Python", fontAwesomeClassname: "logos-python" },
+        { skillName: "PHP", fontAwesomeClassname: "logos-php" },
         { skillName: "Laravel", fontAwesomeClassname: "logos-laravel" },
-        {
-          skillName: "CodeIgniter",
-          fontAwesomeClassname: "simple-icons:codeigniter",
-        },
+        { skillName: "JavaScript", fontAwesomeClassname: "logos-javascript" },
         { skillName: "React", fontAwesomeClassname: "logos-react" },
         { skillName: "Node.js", fontAwesomeClassname: "logos-nodejs" },
-        {
-          skillName: "Express.js",
-          fontAwesomeClassname: "simple-icons:express",
-        },
+        { skillName: "Docker", fontAwesomeClassname: "logos-docker-icon" },
+        { skillName: "Git", fontAwesomeClassname: "logos-git-icon" },
         { skillName: "MySQL", fontAwesomeClassname: "logos-mysql" },
         { skillName: "MongoDB", fontAwesomeClassname: "logos-mongodb" },
       ],
@@ -96,8 +90,8 @@ const degrees = {
       subtitle: "M.Sc. (Information Technology)",
       logo_path: "atmiya.png",
       alt_name: "Atmiya University",
-      duration: "Jul 2024 - Mar 2026",
-      descriptions: ["⚡ Pursuing M.Sc. in Information Technology."],
+      duration: "2024 - 2026",
+      descriptions: ["⚡ M.Sc. in Information Technology."],
       website_link: "",
     },
     {
@@ -105,7 +99,7 @@ const degrees = {
       subtitle: "B.Sc. (Information Technology)",
       logo_path: "darshan.png",
       alt_name: "Darshan University",
-      duration: "Jul 2021 - Mar 2024",
+      duration: "2021 - 2024",
       descriptions: ["⚡ Completed B.Sc. in Information Technology."],
       website_link: "",
     },
@@ -114,6 +108,17 @@ const degrees = {
 
 const certifications = {
   certifications: [
+    {
+      title: "Snorkel AI",
+      subtitle: "Terminus 2nd Edition - Coding-Agent Benchmarking",
+      logo_path: "snorkel.svg",
+      alt_name: "Snorkel AI",
+      descriptions: [
+        "⚡ Cleared Terminus 2nd Edition qualification and prepared coding-agent benchmark tasks.",
+      ],
+      website_link: "",
+      certificate_link: "",
+    },
     {
       title: "Hackerrank",
       subtitle: "Software Engineer",
@@ -152,25 +157,25 @@ const experience = {
       work: true,
       experiences: [
         {
+          title: "AI Coding Evaluation & Agent Benchmarking",
+          company: "Snorkel AI - Terminus 2nd Edition",
+          company_url: "",
+          logo_path: "snorkel.svg",
+          duration: "2026",
+          location: "Remote",
+          description:
+            "• Prepared coding-agent benchmark tasks with explicit instructions, reference implementations, environment setup, and acceptance checks.\n• Reviewed Harbor evaluation workflows using Docker and Git.\n• Analyzed reference-agent and no-op baseline results for ambiguity, verifier failures, and test coverage gaps.",
+          color: "#0F172A",
+        },
+        {
           title: "Software Engineer",
           company: "CRM Punch",
           company_url: "",
           logo_path: "crmpunch.png",
-          duration: "Aug 2025 - Present",
-          location: "Rajkot, Gujarat, India",
+          duration: "Apr 2025 - Present",
+          location: "Ahmedabad, Gujarat, India",
           description:
-            "• Building and maintaining scalable web applications.\n• Collaborating on requirement analysis and solution design.\n• Ensuring code quality, security, and performance.",
-          color: "#0F172A",
-        },
-        {
-          title: "Full Stack Developer",
-          company: "Freelancer",
-          company_url: "",
-          logo_path: "freelancer.svg",
-          duration: "Apr 2025 - Aug 2025",
-          location: "India",
-          description:
-            "• Provided freelance web development services delivering secure, scalable solutions.\n• Worked closely with clients on custom requirements and timelines.\n• Handled the full lifecycle from planning to deployment.",
+            "• Developed Laravel, React.js, and Node.js features, REST APIs, and business automation for CRM/SaaS applications supporting 10,000+ active users.\n• Integrated Quickbase, Stripe, and third-party systems with secure validation and authorization workflows.\n• Optimized MySQL queries and backend services, improving API response time by up to 35%.\n• Supported Docker deployments, CI/CD, troubleshooting, and production monitoring.",
           color: "#334155",
         },
         {
@@ -209,7 +214,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "Projects from my resume across Laravel, React.js, Node.js, MySQL, MongoDB, and CRM integrations.",
+    "Selected software and AI engineering work across Laravel, React.js, Python, Node.js, MySQL, Docker, and CRM integrations.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -221,7 +226,7 @@ const projects = {
       id: "proj-1",
       name: "MoveWithCitizen",
       description:
-        "Rental property management system for the U.S. market. Manages utility services, tenant move-ins/outs, and property listings. (Laravel, React, QuickBase CRM)",
+        "Contributed to a U.S. rental property-management application, including business workflows, backend integrations, AWS deployment, Docker, and access-control improvements. (Laravel, React.js, MySQL, Quickbase)",
       url: "",
       languages: [
         { name: "Laravel", iconifyClass: "logos-laravel" },
@@ -233,7 +238,7 @@ const projects = {
       id: "proj-2",
       name: "E-commerce Platform",
       description:
-        "Full-featured e-commerce website with inventory, cart, and order modules; focused on scalability, UX, and secure transactions. (React.js, Node.js, MongoDB)",
+        "Worked on payment integration, checkout workflows, and backend/frontend optimization for an e-commerce system. (Laravel, React.js, MySQL, Stripe)",
       url: "",
       languages: [
         { name: "React", iconifyClass: "logos-react" },
@@ -245,7 +250,7 @@ const projects = {
       id: "proj-3",
       name: "Document Management System",
       description:
-        "Document storage and tracking system with expiry alerts and role-based access; improved organizational efficiency and compliance. (Laravel, MySQL)",
+        "Designed and developed document storage, REST APIs, search, role-based authorization, secure access, and automated workflows. (Laravel, MySQL)",
       url: "",
       languages: [
         { name: "Laravel", iconifyClass: "logos-laravel" },
@@ -256,7 +261,7 @@ const projects = {
       id: "proj-4",
       name: "Cirus Defense",
       description:
-        "Performance improvements via query optimization, caching, and refactoring; fixed critical bugs to improve stability and scalability. (Laravel, MySQL)",
+        "Improved application stability and performance through MySQL query optimization, caching, and Laravel refactoring. (Laravel, MySQL)",
       url: "",
       languages: [
         { name: "Laravel", iconifyClass: "logos-laravel" },
@@ -294,7 +299,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "Profile.png",
     description:
-      "Feel free to reach out for Software Engineer opportunities, freelance work, or collaboration.",
+      "Feel free to reach out for Software Engineer, AI coding evaluation, or technical collaboration opportunities.",
   },
   blogSection: {
     title: "",

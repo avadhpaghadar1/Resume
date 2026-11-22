@@ -18,7 +18,13 @@ class Certifications extends Component {
         </div>
         <div className="certs-body-div">
           {certifications.certifications.map((cert) => {
-            return <CertificationCard certificate={cert} theme={theme} />;
+            return (
+              <CertificationCard
+                key={`${cert.title}-${cert.subtitle}`}
+                certificate={cert}
+                theme={theme}
+              />
+            );
           })}
         </div>
       </div>
